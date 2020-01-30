@@ -1,5 +1,5 @@
 class AnnouncementsController < ApplicationController
   def create
-    system('sh /home/pi/echo/annc.sh')
+    system('sudo sh /home/pi/echo/annc.sh')
   end
 end
