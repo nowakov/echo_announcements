@@ -4,16 +4,16 @@ class AnnouncementsController < ApplicationController
   def create
     amixer = AMixer2019.new
 
-    60.downto(10) do |i|
-      amixer.volume = "#{i}%"
-      sleep 0.02
+    30.downto(5) do |i|
+      amixer.volume = "#{i*2}%"
+      sleep 0.2
     end
 
     system('./../annc.sh')
 
-    10.upto(60) do |i|
-      amixer.volume = "#{i}%"
-      sleep 0.02
+    5.upto(30) do |i|
+      amixer.volume = "#{i*2}%"
+      sleep 0.2
     end
   end
 end
