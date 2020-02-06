@@ -5,7 +5,7 @@
     .uk-card-header.uk-light.uk-text-center
       h3 Foyer announcements
     .uk-card-body.uk-flex.uk-flex-column.uk-flex-center
-      = link_to 'ZACZYNAMY ZA 5 MIN.', announcements_path(start: 5), method: :post, class: 'uk-button uk-button-default uk-width-1-1'
+      = link_to 'ZACZYNAMY ZA 5 MIN.', announcements_path(start: 5), method: :post, class: 'uk-button uk-button-default uk-width-1-1', data: { disable_with: 'LECI...' }
       br
       br
-      = link_to 'ZACZYNAMY ZA 1 MIN.', announcements_path(start: 0), method: :post, class: 'uk-button uk-button-default uk-width-1-1'
+      = link_to 'ZACZYNAMY ZA 1 MIN.', announcements_path(start: 0), method: :post, class: 'uk-button uk-button-default uk-width-1-1', data: { disable_with: 'LECI...' }
