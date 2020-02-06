@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Foyer announcements
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = javascript_pack_tag 'application'
+    = stylesheet_pack_tag 'application'
+    = favicon_pack_tag 'fav.png'
+
+  body.uk-flex.uk-flex-center.uk-flex-middle.uk-height-viewport style="background-color: #262626;"
+    = yield
