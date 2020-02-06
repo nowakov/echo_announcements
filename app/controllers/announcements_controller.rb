@@ -2,18 +2,16 @@ require 'amixer2019'
 
 class AnnouncementsController < ApplicationController
   def create
-    amixer = AMixer2019.new
-
-    30.downto(5) do |i|
-      amixer.volume = "#{i*2}%"
-      sleep 0.2
+    50.times do
+      `/usr/bin/amixer -q set Master 1%-`
+      sleep 0.01
     end
 
-    system('./../annc.sh')
+    `/usr/bin/omxplayer -o local /home/pi/echo/start-0.mp3`
 
-    5.upto(30) do |i|
-      amixer.volume = "#{i*2}%"
-      sleep 0.2
+    50.times do
+      `/usr/bin/amixer -q set Master 1%+`
+      sleep 0.01
     end
   end
 end
