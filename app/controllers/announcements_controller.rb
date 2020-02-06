@@ -11,5 +11,7 @@ class AnnouncementsController < ApplicationController
       `/usr/bin/amixer -q set Master 1%+`
       sleep 0.05
     end
+
+    redirect_to root_path
   end
 end
