@@ -1,0 +1,20 @@
+{
+  "application.css": "/packs/css/application-5a8d2d26.css",
+  "application.js": "/packs/js/application-56e42a1fdc0d365c6219.js",
+  "application.js.map": "/packs/js/application-56e42a1fdc0d365c6219.js.map",
+  "entrypoints": {
+    "application": {
+      "css": [
+        "/packs/css/application-5a8d2d26.css"
+      ],
+      "js": [
+        "/packs/js/application-56e42a1fdc0d365c6219.js"
+      ],
+      "js.map": [
+        "/packs/js/application-56e42a1fdc0d365c6219.js.map"
+      ]
+    }
+  },
+  "media/images/crossecho.png": "/packs/media/images/crossecho-d892825a05943ca5ba3bd49f0cd1c10c.png",
+  "media/images/fav.png": "/packs/media/images/fav-a546684f16c275265768914c5f9c1c21.png"
+}
