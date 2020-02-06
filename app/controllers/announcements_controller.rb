@@ -1,5 +1,3 @@
-require 'amixer2019'
-
 class AnnouncementsController < ApplicationController
   def create
     50.times do
